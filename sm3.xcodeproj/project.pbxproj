@@ -3,19 +3,23 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B4AA5FD88B8AD0F106C5124 /* Pods_sm3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3BACD1294092347707FA71D /* Pods_sm3.framework */; };
 		91319AF824FF399B00A6D06F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91319AF724FF399B00A6D06F /* AppDelegate.swift */; };
 		91319AFA24FF399B00A6D06F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91319AF924FF399B00A6D06F /* SceneDelegate.swift */; };
 		91319AFC24FF399B00A6D06F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91319AFB24FF399B00A6D06F /* ViewController.swift */; };
 		91319AFF24FF399B00A6D06F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91319AFD24FF399B00A6D06F /* Main.storyboard */; };
 		91319B0124FF399B00A6D06F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91319B0024FF399B00A6D06F /* Assets.xcassets */; };
 		91319B0424FF399B00A6D06F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91319B0224FF399B00A6D06F /* LaunchScreen.storyboard */; };
+		91319B0D24FF3A4C00A6D06F /* bridging.m in Sources */ = {isa = PBXBuildFile; fileRef = 91319B0C24FF3A4C00A6D06F /* bridging.m */; };
+		91319B0F24FF3C2700A6D06F /* GetWiFi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91319B0E24FF3C2700A6D06F /* GetWiFi.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8E4EE17C15AE9AE46CAF6F41 /* Pods-sm3.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sm3.release.xcconfig"; path = "Target Support Files/Pods-sm3/Pods-sm3.release.xcconfig"; sourceTree = "<group>"; };
 		91319AF424FF399B00A6D06F /* sm3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sm3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91319AF724FF399B00A6D06F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		91319AF924FF399B00A6D06F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +28,12 @@
 		91319B0024FF399B00A6D06F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		91319B0324FF399B00A6D06F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		91319B0524FF399B00A6D06F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		91319B0B24FF3A4B00A6D06F /* sm3-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "sm3-Bridging-Header.h"; sourceTree = "<group>"; };
+		91319B0C24FF3A4C00A6D06F /* bridging.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = bridging.m; sourceTree = "<group>"; };
+		91319B0E24FF3C2700A6D06F /* GetWiFi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetWiFi.swift; sourceTree = "<group>"; };
+		91319B1024FF3D2A00A6D06F /* sm3.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = sm3.entitlements; sourceTree = "<group>"; };
+		CA2C9DF0A8BF4572F43A2CC5 /* Pods-sm3.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sm3.debug.xcconfig"; path = "Target Support Files/Pods-sm3/Pods-sm3.debug.xcconfig"; sourceTree = "<group>"; };
+		D3BACD1294092347707FA71D /* Pods_sm3.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sm3.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +41,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B4AA5FD88B8AD0F106C5124 /* Pods_sm3.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		345740E707830B54AD6B78AB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D3BACD1294092347707FA71D /* Pods_sm3.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		91319AEB24FF399B00A6D06F = {
 			isa = PBXGroup;
 			children = (
 				91319AF624FF399B00A6D06F /* sm3 */,
 				91319AF524FF399B00A6D06F /* Products */,
+				93DA67FDA3BD88D0B68A94AE /* Pods */,
+				345740E707830B54AD6B78AB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +77,28 @@
 		91319AF624FF399B00A6D06F /* sm3 */ = {
 			isa = PBXGroup;
 			children = (
+				91319B1024FF3D2A00A6D06F /* sm3.entitlements */,
 				91319AF724FF399B00A6D06F /* AppDelegate.swift */,
 				91319AF924FF399B00A6D06F /* SceneDelegate.swift */,
 				91319AFB24FF399B00A6D06F /* ViewController.swift */,
+				91319B0E24FF3C2700A6D06F /* GetWiFi.swift */,
 				91319AFD24FF399B00A6D06F /* Main.storyboard */,
 				91319B0024FF399B00A6D06F /* Assets.xcassets */,
 				91319B0224FF399B00A6D06F /* LaunchScreen.storyboard */,
 				91319B0524FF399B00A6D06F /* Info.plist */,
+				91319B0C24FF3A4C00A6D06F /* bridging.m */,
+				91319B0B24FF3A4B00A6D06F /* sm3-Bridging-Header.h */,
 			);
 			path = sm3;
+			sourceTree = "<group>";
+		};
+		93DA67FDA3BD88D0B68A94AE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CA2C9DF0A8BF4572F43A2CC5 /* Pods-sm3.debug.xcconfig */,
+				8E4EE17C15AE9AE46CAF6F41 /* Pods-sm3.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +108,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 91319B0824FF399B00A6D06F /* Build configuration list for PBXNativeTarget "sm3" */;
 			buildPhases = (
+				CF4E759D048994C84B18372E /* [CP] Check Pods Manifest.lock */,
 				91319AF024FF399B00A6D06F /* Sources */,
 				91319AF124FF399B00A6D06F /* Frameworks */,
 				91319AF224FF399B00A6D06F /* Resources */,
+				B99926C056E66642916AE5C2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -99,6 +135,7 @@
 				TargetAttributes = {
 					91319AF324FF399B00A6D06F = {
 						CreatedOnToolsVersion = 11.6;
+						LastSwiftMigration = 1160;
 					};
 				};
 			};
@@ -133,14 +170,58 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		B99926C056E66642916AE5C2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-sm3/Pods-sm3-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-sm3/Pods-sm3-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-sm3/Pods-sm3-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF4E759D048994C84B18372E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-sm3-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		91319AF024FF399B00A6D06F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				91319AFC24FF399B00A6D06F /* ViewController.swift in Sources */,
+				91319B0F24FF3C2700A6D06F /* GetWiFi.swift in Sources */,
 				91319AF824FF399B00A6D06F /* AppDelegate.swift in Sources */,
 				91319AFA24FF399B00A6D06F /* SceneDelegate.swift in Sources */,
+				91319B0D24FF3A4C00A6D06F /* bridging.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,8 +363,11 @@
 		};
 		91319B0924FF399B00A6D06F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA2C9DF0A8BF4572F43A2CC5 /* Pods-sm3.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = sm3/sm3.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YG8X3KPMR6;
 				INFOPLIST_FILE = sm3/Info.plist;
@@ -293,6 +377,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = hiep.tran.dev.sm3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "sm3/sm3-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -300,8 +386,11 @@
 		};
 		91319B0A24FF399B00A6D06F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E4EE17C15AE9AE46CAF6F41 /* Pods-sm3.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = sm3/sm3.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YG8X3KPMR6;
 				INFOPLIST_FILE = sm3/Info.plist;
@@ -311,6 +400,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = hiep.tran.dev.sm3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "sm3/sm3-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
